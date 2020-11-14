@@ -43,13 +43,8 @@ function handleInput() {
   }
   // If a frequency was detected, set out inputNote device to store this
   if (maxFreq > 0) {
-    inputNote = noteToName(freqToNote(maxFreq));
+    inputNote = noteToName(freqToMidi(maxFreq));
   }
-}
-
-function freqToNote( freq ) {
-  const note = Math.round(12*(Math.log(freq/440)/Math.log(2)))+69;
-  return note;
 }
 
 function noteToName( note ) {
