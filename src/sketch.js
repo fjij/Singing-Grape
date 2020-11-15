@@ -36,7 +36,7 @@ function draw() {
   fill('#3e2540');
   textAlign(CENTER);
   textFont('Sans', 60);
-  text('Duet!', width/2, 80);
+  text('Singing Grape!', width/2, 80);
   textFont('Sans', 48);
   if (ready) {
     //text(noteToName(inputNote) + " @ " + inputLevel, width/2, height/2);
